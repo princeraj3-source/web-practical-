@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>List Manager</h3>
+    <input type="text" id="itemText" placeholder="New Item">
+    <button onclick="addItem()">Add Item</button>
+    <button onclick="removeItem()">Remove Last Item</button>
+    
+    <ul id="myList">
+        <li>Existing Item</li>
+    </ul>
+
+    <script>
+        function addItem() {
+            let list = document.getElementById("myList");
+            let text = document.getElementById("itemText").value;
+            
+            // Create new element
+            let newItem = document.createElement("li");
+            newItem.textContent = text || "Empty Item";
+            
+            // Append
+            list.appendChild(newItem);
+        }
+
+        function removeItem() {
+            let list = document.getElementById("myList");
+            // Remove last child
+            if (list.lastElementChild) {
+                list.removeChild(list.lastElementChild);
+            }
+        }
+    </script>
+</body>
+</html>

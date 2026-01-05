@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 3: Tables</title>
+    <style>
+        table, th, td { border: 1px solid black; border-collapse: collapse; padding: 10px; }
+    </style>
+</head>
+<body>
+    <table>
+        <caption><strong>Student Timetable</strong></caption>
+        <tr>
+            <th>Day/Period</th>
+            <th>9:00 - 10:00</th>
+            <th>10:00 - 11:00</th>
+            <th>11:00 - 12:00</th>
+        </tr>
+        <tr>
+            <td align="center">Monday</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td rowspan="2" align="center" style="background-color: #f0f0f0;">Sports</td>
+        </tr>
+        <tr>
+            <td align="center">Tuesday</td>
+            <td colspan="2" align="center">Library Session</td>
+        </tr>
+    </table>
+</body>
+</html>

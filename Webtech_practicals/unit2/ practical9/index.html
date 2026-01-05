@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 9: Responsive Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Mobile First (Default) */
+        body { background-color: lightblue; font-size: 16px; }
+        .container { width: 100%; padding: 10px; }
+
+        /* Tablet/Desktop (Screen wider than 600px) */
+        @media (min-width: 600px) {
+            body { background-color: lightgreen; font-size: 20px; }
+            .container { width: 50%; margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resize the Browser!</h1>
+        <p>Blue background on Mobile.<br>Green background on Desktop.</p>
+    </div>
+</body>
+</html>
