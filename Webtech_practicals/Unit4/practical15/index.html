@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="container">
+        <p class="text">Original Text</p>
+    </div>
+    <button onclick="changeText()">Change Content</button>
+
+    <script>
+        function changeText() {
+            // Using getElementById
+            let container = document.getElementById("container");
+            
+            // Using querySelector to find the first <p> with class 'text'
+            let para = container.querySelector(".text");
+            
+            // Changing content using innerHTML
+            para.innerHTML = "<b>Text Changed via DOM Manipulation!</b>";
+            para.style.color = "purple";
+        }
+    </script>
+</body>
+</html>

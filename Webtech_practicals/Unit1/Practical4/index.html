@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 4: Forms</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="/submit-data">
+        <label>Name:</label> <input type="text" placeholder="Enter full name"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobby" value="coding"> Coding
+        <input type="checkbox" name="hobby" value="reading"> Reading<br><br>
+
+        <label>Country:</label>
+        <select name="country">
+            <option value="usa">USA</option>
+            <option value="india">India</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+</body>
+</html>

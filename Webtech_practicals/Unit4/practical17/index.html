@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Event Listeners</h3>
+    <input type="text" id="txtInput" placeholder="Type here...">
+    <div id="box" style="width:100px; height:100px; background:blue; color:white; margin-top:10px;">Hover Me</div>
+    <p id="status">Status: Waiting...</p>
+
+    <script>
+        let box = document.getElementById("box");
+        let input = document.getElementById("txtInput");
+        let status = document.getElementById("status");
+
+        // Mouse Event
+        box.addEventListener("mouseover", function() {
+            box.style.background = "green";
+            status.innerText = "Status: Mouse Over Box";
+        });
+        box.addEventListener("mouseout", function() {
+            box.style.background = "blue";
+            status.innerText = "Status: Mouse Out";
+        });
+
+        // Keyboard Event
+        input.addEventListener("keyup", function(e) {
+            status.innerText = "Status: Typing... Key pressed: " + e.key;
+        });
+    </script>
+</body>
+</html>
